@@ -5,9 +5,9 @@
     <key>Description</key>
     <string>Download and install Brave browser for macOS</string>
     <key>Identifier</key>
-    <string>com.github.autopkg.install.brave</string>
+    <string>com.github.autopkg-recipes.install.brave</string>
     <key>ParentRecipe</key>
-    <string>com.github.autopkg.download.brave</string>
+    <string>com.github.autopkg-recipes.download.brave</string>
     <key>MinimumVersion</key>
     <string>0.6.0</string>
     <key>Input</key>

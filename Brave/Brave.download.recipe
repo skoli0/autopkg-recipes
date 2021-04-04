@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Download Brave browser for macOS</string>
     <key>Identifier</key>
-    <string>com.github.autopkg.download.brave</string>
+    <string>com.github.autopkg-recipes.download.brave</string>
     <key>Input</key>
     <dict>
         <key>INCLUDE_PRERELEASES</key>
