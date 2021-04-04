@@ -19,6 +19,7 @@ AUTOPKGARRAY=$(find . -name '*.munki*' | cut -d'/' -f3)
 LOGGER="echo"
 
 echo $AUTOPKGARRAY
+plutil -lint **/*.recipe
 
 autopkg list-repos || autopkg repo-delete $(autopkg list-repos | cut -d'(' -f2 | cut -d')' -f1)
 autopkg repo-add $(git config --get remote.origin.url)

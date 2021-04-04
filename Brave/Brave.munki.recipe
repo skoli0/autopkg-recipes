@@ -5,9 +5,9 @@
     <key>Description</key>
     <string>Download Brave browser for macOS and import it to Munki</string>
     <key>Identifier</key>
-    <string>com.github.autopkg-recipes.munki.brave</string>
+    <string>com.github.skoli0.munki.brave</string>
     <key>ParentRecipe</key>
-    <string>com.github.autopkg-recipes.download.brave</string>
+    <string>com.github.skoli0.download.brave</string>
     <key>MinimumVersion</key>
     <string>0.6.0</string>
     <key>Input</key>
