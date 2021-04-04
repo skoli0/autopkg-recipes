@@ -1,0 +1,19 @@
+#!/bin/bash
+
+AUTOPKG_REPO=$(git config --get remote.origin.url)
+REPOLOC="/Users/Shared"
+REPONAME="munki_repo"
+TEXTEDITOR="TextEdit.app"
+
+AUTOPKG_LOCATION="/usr/local/bin/autopkg"
+MUNKILOC="/usr/local/munki"
+MUNKIMAKECATALOGS="/usr/local/munki/makecatalogs"
+MANU="/usr/local/munki/manifestutil"
+REPODIR="${REPOLOC}/${REPONAME}"
+DEFAULTS="/usr/bin/defaults"
+AUTOPKG="/usr/local/bin/autopkg"
+
+autopkg list-repos || autopkg repo-delete $(autopkg list-repos | cut -d'(' -f2 | cut -d')' -f1)
+autopkg repo-add $(git config --get remote.origin.url)
+
+
